@@ -16,6 +16,7 @@ app.use(express.urlencoded({ extended: false}))
 
 //Declare the path to the API/routes here
 app.use('/api/gettest', require('./routes/testRoutes'));
+app.use('/api/users', require('./routes/userRoutes'));
 
 app.use(errorHandler)
 
